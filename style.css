@@ -37,7 +37,7 @@ body {
     height:500px;
 }
 /* columns content */
-.col h1 {
+.col h2 {
     font-size: 45px;
     font-family:myPageHeadFont,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
@@ -54,8 +54,11 @@ body {
 .col1 , .col2 ,.col3 {
     position: relative;
 }
-.col1 button,.col2 button,.col3 button {
+.col1 a,.col2 a,.col3 a {
     position: absolute !important;
+    text-decoration: none;
+    background-color: var(--bg);
+    color:var(--bg);
     left:40px;
     bottom:25px;
     /* margin-top:40px; */
@@ -74,14 +77,14 @@ body {
     border-top-left-radius:10px ;
     border-top-right-radius:10px ;
 }
-.cols .col1 button {
+.cols .col1 a {
     color: var(--firstcol);
     transition: all .3s ease;
 }
 .cols .col2 {
     background-color: var(--seccol);
 }
-.cols .col2 button {
+.cols .col2 a {
     color:var(--seccol);
     transition: all .3s ease;
 }
@@ -90,23 +93,23 @@ body {
     border-bottom-left-radius:10px ;
     border-bottom-right-radius:10px ;
 }
-.cols .col3 button {
+.cols .col3 a {
     color:var(--thirdcol);
     transition: all .3s ease;
 }
-/* buttons hover */
-.col button:hover {
+/* as hover */
+.col a:hover {
     border:2px solid var(--bg);
 }
-.col1 button:hover {
+.col1 a:hover {
     background-color: var(--firstcol);
     color:var(--bg);
 }
-.col2 button:hover {
+.col2 a:hover {
     background-color: var(--seccol);
     color:var(--bg);
 }
-.col3 button:hover {
+.col3 a:hover {
     background-color: var(--thirdcol);
     color:var(--bg);
 }
